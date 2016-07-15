@@ -1,0 +1,526 @@
+#abcyaButtons {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999999;
+}
+
+#main-button{
+    position: fixed;
+    width: 47px;
+    height: 47px;
+    padding:5px;
+
+
+}
+
+/*main button stuff*/
+
+#abcyaMenu {
+
+    position: fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+
+}
+
+#menu-bg {
+    background-color: rgba(255,255,255,0.65);
+    position: fixed;
+}
+
+
+.menu-button-vertical{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: auto;
+    padding:5px;
+    top: 50%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+
+}
+
+.menu-button-horizontal{
+
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    padding:5px;
+    left: 50%;
+    top:50%;
+    margin: auto;
+    -webkit-transform: translate(-100%,-50%);
+    -ms-transform: translate(-100%,-50%);
+    transform: translate(-100%,-50%);
+
+
+}
+
+#abcyaExitDialog {
+
+    position:fixed;
+    top:0;
+    left:0;
+
+}
+
+.exit-container{
+
+    position: fixed;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+}
+
+
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+
+    animation: fadeIn 0.4s linear;
+    -webkit-animation: fadeIn 0.4s linear;
+    -moz-animation: fadeIn 0.4s linear;
+    -o-animation: fadeIn 0.4s linear;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+
+
+}
+
+.fade-overlay {
+    animation: fadeOut 0.4s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 0.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadeOut 0.4s linear;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fadeOut 0.4s linear;
+    -o-animation-fill-mode: forwards;
+}
+
+.exit-dialog-bg {
+    position:relative;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width:389px;
+
+
+}
+
+
+.yes-button {
+    position: fixed;
+    top:0%;
+    left:0%;
+    padding-right: 10px;
+    -webkit-transform: translate(-100%,0%);
+    -ms-transform: translate(-100%,0%);
+    transform: translate(-100%,0%);
+}
+
+.no-button {
+    position: fixed;
+    top:0%;
+    left:0%;
+    padding-left: 10px;
+}
+
+
+
+.popUp {
+
+    opacity:0;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin:  0 0;
+
+    animation: scaleIn 0.25s ease-out;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -webkit-animation-delay: 0.25s;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scaleIn 0.25s ease-out;
+    -moz-animation-delay: 0.25s;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scaleIn 0.25s ease-out;
+    -o-animation-delay: 0.25s;
+    -o-animation-fill-mode: forwards;
+}
+
+.popOut {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin:  0 0;
+
+    animation: scaleOut 0.25s ease-out;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scaleOut 0.25s ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scaleOut 0.25s ease-out;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scaleOut 0.25s ease-out;
+    -o-animation-fill-mode: forwards;
+}
+
+.showMenu {
+    animation: scaleIn 0.25s ease-out;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scaleIn 0.25s ease-out;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scaleIn 0.25s ease-out;
+    -o-animation-fill-mode: forwards;
+}
+
+.hideMenu {
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation: scaleOut 0.25s ease-out;
+    -webkit-animation: scaleOut 0.25s ease-out;
+    -moz-animation: scaleOut 0.25s ease-out;
+    -o-animation: scaleOut 0.25s ease-out;
+
+}
+
+.from-top-left {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin:  0% 0%;
+
+    animation: scaleIn 0.25s ease-out;
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -moz-animation: scaleIn 0.25s ease-out;
+    -o-animation: scaleIn 0.25s ease-out;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+
+}
+
+.from-top-right {
+
+
+
+    -webkit-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    transform-origin:  100% 0%;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+
+    animation: scaleIn 0.25s ease-out;
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -moz-animation: scaleIn 0.25s ease-out;
+    -o-animation: scaleIn 0.25s ease-out;
+
+
+}
+
+.from-bottom-right {
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin:  100% 100%;
+
+    animation: scaleIn 0.25s ease-out;
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -moz-animation: scaleIn 0.25s ease-out;
+    -o-animation: scaleIn 0.25s ease-out;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+}
+
+.from-bottom-left {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin:  0% 100%;
+
+    animation: scaleIn 0.25s ease-out;
+    -webkit-animation: scaleIn 0.25s ease-out;
+    -moz-animation: scaleIn 0.25s ease-out;
+    -o-animation: scaleIn 0.25s ease-out;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1
+    }
+
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1
+    }
+
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1
+    }
+
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0
+    }
+    100% {
+        opacity:1
+    }
+
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+
+}
+
+@keyframes scaleIn {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:  scale(1);
+        -ms-transform:  scale(1);
+        -o-transform:  scale(1);
+        transform:  scale(1);
+
+    }
+}
+
+@-webkit-keyframes scaleIn {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:  scale(1);
+        -ms-transform:  scale(1);
+        -o-transform:  scale(1);
+        transform:  scale(1);
+
+    }
+}
+
+@-moz-keyframes scaleIn {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:  scale(1);
+        -ms-transform:  scale(1);
+        -o-transform:  scale(1);
+        transform:  scale(1);
+
+    }
+}
+
+@-o-keyframes scaleIn {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:  scale(1);
+        -ms-transform:  scale(1);
+        -o-transform:  scale(1);
+        transform:  scale(1);
+
+    }
+}
+
+@keyframes scaleOut {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity:0;
+        -webkit-transform:  scale(0.1);
+        -ms-transform:  scale(0.1);
+        -o-transform:  scale(0.1);
+        transform:  scale(0.1);
+
+    }
+}
+
+@-webkit-keyframes scaleOut {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity:0;
+        -webkit-transform:  scale(0.1);
+        -ms-transform:  scale(0.1);
+        -o-transform:  scale(0.1);
+        transform:  scale(0.1);
+
+    }
+}
+
+@-moz-keyframes scaleOut {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity:0;
+        -webkit-transform:  scale(0.1);
+        -ms-transform:  scale(0.1);
+        -o-transform:  scale(0.1);
+        transform:  scale(0.1);
+
+    }
+}
+
+@-o-keyframes scaleOut {
+
+    0% {
+        opacity:1;
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity:0;
+        -webkit-transform:  scale(0.1);
+        -ms-transform:  scale(0.1);
+        -o-transform:  scale(0.1);
+        transform:  scale(0.1);
+
+    }
+}
+
+
+

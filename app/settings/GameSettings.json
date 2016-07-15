@@ -1,0 +1,11 @@
+{
+    "game_name":"3d Dice",
+    "game_orientation":"portrait",
+    "button_color":"dark",
+    "force_buttons":"true",
+    "exit_button_location":{"x":25,"y":5},
+    "view_button_location":{"x":55,"y":5},
+    "view_assets_path":"../../../assets/images/abcyaButtonAssets/"
+
+
+}

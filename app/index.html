@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--links-->
+
+    <meta id="showbars" name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Calendar Game">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <title>ABCYa! | Matching Game</title>
+
+    <link href="../../../assets/css/gamestyles.css" rel="stylesheet">
+    <link href="./assets/css/fonts.css" rel="stylesheet">
+
+    <!--createjs-->
+    <script src="../../../assets/libs/createjs-2015.11.26.min.js"></script>
+    <script src="../../../assets/libs/ndgmr.Collision.js"></script>
+    <script src="../../../assets/libs/abcyaGames-0.1.0a.min.js"></script>
+    <script src="../../../assets/dev/abcyaGameGlobals.js"></script>
+
+    <!--common-->
+    <script src="../../../assets/common/abcyaUtils.js"></script>
+
+    <!--gamedata-->
+    <script src="src/GameConfig.js"></script>
+    <script src="src/AssetsManager.js"></script>
+    <script src="src/SceneManager.js"></script>
+
+    <!--screens-->
+    <script src="src/screens/IntroScreen.js"></script>
+    <script src="src/screens/GameScreen.js"></script>
+
+    <!--game-->
+    <script src="src/game/GameTile.js"></script>
+    <script src="src/game/TileBoard.js"></script>
+    <script src="src/game/ScoreBoard.js"></script>
+    <script src="src/game/GameInstructions.js"></script>
+
+    <!--animatons-->
+    <script src="src/animations/abcyaEffects.js"></script>
+
+
+    <!--main-->
+    <script src="src/GameMain.js"></script>
+</head>
+<body onload="init();">
+
+    <div id="contentWrapper" class="contentWrapper">
+        <div id="gameWrapper" class="gameWrapper">
+            <img id="bg" src="">
+            <canvas id="gameCanvas" width="768" height="1024" ></canvas>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
